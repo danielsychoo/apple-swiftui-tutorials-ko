@@ -83,7 +83,7 @@ canvas에서 Resume을 클릭해 preview를 띄우세요.
 
 ### Step 7
 
-body 속성에서, "Hello, World!"를 수정해 스스로를 환영하세요.
+body 속성에서, "Hello, World!"를 수정해 스스로를 환영해보세요.
 
 <img alt="step7" src="../images/creating-and-combining-views/section1/step7.png" style="width: 700px" />
 
@@ -104,6 +104,64 @@ Landmarks 앱을 만들면서, 당신은 source 편집기, canvas, inspector와 
 
 <br>
 
+> 다음으로 당신은 inspector를 이용해 text view를 커스텀해볼 것 입니다.
+
+<br>
+
 ### Step 1
 
+preview에서 환영문구를 `commamd + 클릭` 해서 구조화된 editing popover를 가져오고, "Show SwiftUI Inspector" 를 선택하세요.
+
 <img alt="step1" src="../images/creating-and-combining-views/section2/step1.png" style="width: 300px" />
+
+popover는 당신이 inspect하려고 선택한 view의 타입에 따라, 커스텀이 가능한 다른 속성들을 보여줍니다.
+
+<br>
+
+### Step 2
+
+<img alt="step2" src="../images/creating-and-combining-views/section2/step2.png" style="width: 300px" />
+
+inspector를 이용해 text를 "Turtle Rock"으로 변경하세요, 이는 당신이 app에서 보여줄 첫 번째 랜드마크의 이름입니다.
+
+<br>
+
+### Step 3
+
+font modifier를 "Title"로 변경하세요.
+
+<img alt="step3" src="../images/creating-and-combining-views/section2/step3.png" style="width: 300px" />
+
+이렇게 text에 system font를 적용함으로서 사용자가 선호하는 font size와 setting이 올바르게 적용됩니다.
+
+<br>
+
+> SwiftUI의 view를 커스텀하기 위해 당신이 부르는 method를 modifier라고 부릅니다. modifier는 view의 display 또는 다른 속성들을 변경하기위해 view를 감싸고 있습니다. 각각의 modifier는 새로운 view를 반환하므로, 수직으로 여러 modifier를 쌓아 연결하는 것이 일반적인 방법입니다.
+
+<br>
+
+### Step 4
+
+<img alt="step4" src="../images/creating-and-combining-views/section2/step4.png" style="width: 700px" />
+
+code를 직접 수정해서 `padding()` modifier를 `foregroundColor(.green)` modifier로 변경하세요; 이 변경사항은 text의 색상을 green으로 바꿉니다.
+
+<br>
+
+> 당신의 코드는 항상 view와 동일한 source 입니다. 당신이 inspector를 이용해 modifier를 변경 또는 제거하면, Xcode는 이를 당신의 code에도 즉시 일치시킵니다.
+
+<br>
+
+### Step 5
+
+<img alt="step5" src="../images/creating-and-combining-views/section2/step5.png" style="width: 300px" />
+
+이번에는, code editor의 `Text` 선언부에서 `Command + 클릭`을 통해 inspector를 열고, popover에서 "Show SwiftUI Inspector"를 선택하세요. 이후 Color 팝업 메뉴를 클릭하고 `Inherited` 를 선택해서 text color를 다시 black으로 바꾸세요.
+
+<br>
+
+### Step 6
+
+<img alt="step6" src="../images/creating-and-combining-views/section2/step6.png" style="width: 700px" />
+
+`foregroundColor(.green)` modifier가 변경, 삭제 될 때 Xcode에 의해 당신의 code가 자동으로 반영된다는 점을 기억하세요.
