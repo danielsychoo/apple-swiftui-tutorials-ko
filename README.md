@@ -22,7 +22,7 @@ SwiftUI는 어떤 Apple 플랫폼에서든 UI를 현대적인 방법으로 선�
 
 <br>
 
-### [Getting Started (시작하기)]()
+### [Getting Started (시작하기)](/1-swiftui-essentials/1-1-creating-and-combining-views.md)
 
 <br>
 
@@ -32,7 +32,7 @@ SwiftUI는 어떤 Apple 플랫폼에서든 UI를 현대적인 방법으로 선�
 
 SwiftUI를 이용해 Xcode의 미리보기를 보면서 간단한 하나의 view부터 많은 view를 만드는 것, 데이터의 흐름을 설정하는 것, navigation을 구축하는 것을 배웁니다.
 
-### - [view 만들고 합치기]() <img alt="time" src="images/landing/time.svg" width="16" height="16" />40분
+### - [view 만들고 합치기](/1-swiftui-essentials/1-1-creating-and-combining-views.md) <img alt="time" src="images/landing/time.svg" width="16" height="16" />40분
 
 ### - [list와 navigation 구축하기]() <img alt="time" src="images/landing/time.svg" width="16" height="16" />35분
 
