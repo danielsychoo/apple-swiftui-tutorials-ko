@@ -1,4 +1,4 @@
-## SwiftUI Tutorials 한글 번역본
+# SwiftUI Tutorials 한글 번역본
 
 이 repository는 [Apple Developer의 SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui)를 번역한 내용입니다.
 
@@ -10,4 +10,9 @@
 `fork -> 수정 -> PR`을 통해 수정내용에 대한 설명을 적어주시면 <br>
 함께 더 완성도 있는 자료로 발전시킬 수 있을 것이라 기대합니다.
 
-<hr> <br>
+# SwiftUI 소개
+
+SwiftUI는 어떤 Apple 플랫폼에서든 UI를 현대적인 방법으로 선언할 수 있게 해줍니다. <br>
+예쁘고 다이나믹한 앱들을 이전보다 빠르게 만들어보세요.
+
+<img alt="시간" src="../resources/images/common/time.svg" width="50" height="50" />
