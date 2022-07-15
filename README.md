@@ -15,4 +15,10 @@
 SwiftUI는 어떤 Apple 플랫폼에서든 UI를 현대적인 방법으로 선언할 수 있게 해줍니다. <br>
 예쁘고 다이나믹한 앱들을 이전보다 빠르게 만들어보세요.
 
-<img alt="시간" src="../resources/images/common/time.svg" width="50" height="50" />
+<img alt="time" src="images/landing/time.svg" width="16" height="16" /> 예상 소요시간 4시간 25분 <br><br>
+
+<button style="width: 116px; height:33px; border-radius: 50px; background-color: #0071e3; color: #fff;">Get started</button>
+
+<br><br>
+
+<img alt="overview" src="images/landing/overview.png" style="max-width: 600px">
