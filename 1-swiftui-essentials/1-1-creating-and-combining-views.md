@@ -19,7 +19,7 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 
 ## 새로운 Project를 만들고 Canvas 살펴보기
 
-<video controls muted="muted" playsinline="" width="300"><source src="../movies/chapter1/1-1.mp4" width="300"></video>
+<img alt="example" src="../images/chapter1/1-1/example.gif" style="width: 300px" />
 
 SwiftUI를 사용하는 새 Xcode 프로젝트를 만듭니다. 만든 후 canvas, previews 그리고 SwiftUI의 템플릿 코드를 살펴보세요.
 
