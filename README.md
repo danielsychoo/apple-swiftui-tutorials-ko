@@ -22,13 +22,13 @@ SwiftUI는 어떤 Apple 플랫폼에서든 UI를 현대적인 방법으로 선�
 
 <br>
 
-## [Getting Started (시작하기)]()
+### [Getting Started (시작하기)]()
 
 <br>
 
 ## Chapter 1. SwiftUI의 필수요소들
 
-<img alt="swiftui-essentials" src="images/landing/swiftui-essentials.png" style="max-width: 150px" />
+<img alt="swiftui-essentials" src="images/landing/swiftui-essentials.png" style="width: 150px" />
 
 SwiftUI를 이용해 Xcode의 미리보기를 보면서 간단한 하나의 view부터 많은 view를 만드는 것, 데이터의 흐름을 설정하는 것, navigation을 구축하는 것을 배웁니다.
 
@@ -42,7 +42,7 @@ SwiftUI를 이용해 Xcode의 미리보기를 보면서 간단한 하나의 view
 
 ## Chapter 2. Drawing과 Animation
 
-<img alt="drawing-animation" src="images/landing/drawing-animation.png" style="max-width: 150px" />
+<img alt="drawing-animation" src="images/landing/drawing-animation.png" style="width: 150px" />
 
 shape과 path를 그리는 방법과 이를 통해 view들 간의 원활한 transition을 적용할 badge를 만드는 방법을 알아봅니다.
 
@@ -54,7 +54,7 @@ shape과 path를 그리는 방법과 이를 통해 view들 간의 원활한 tran
 
 ## Chapter 3. App Design과 Layout
 
-<img alt="layout-app-design" src="images/landing/layout-app-design.png" style="max-width: 150px" />
+<img alt="layout-app-design" src="images/landing/layout-app-design.png" style="width: 150px" />
 
 SwiftUI를 이용해 structure와 layout 그리고 더 복잡한 인터페이스를 만드는 방법을 알아봅니다.
 
@@ -65,6 +65,8 @@ SwiftUI를 이용해 structure와 layout 그리고 더 복잡한 인터페이스
 <br>
 
 ## Chapter 4. Framework 통합하기
+
+<img alt="framework-integration" src="images/landing/framework-integration.png" style="width: 150px" />
 
 특정 플랫폼의 UI 프레임워크를 사용하는 view및 view controller와 SwiftUI의 view를 함께 사용하는 방법을 알아봅니다.
 
