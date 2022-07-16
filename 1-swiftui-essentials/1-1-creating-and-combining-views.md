@@ -19,7 +19,7 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 
 ## 새로운 Project를 만들고 Canvas 살펴보기
 
-<img alt="example" src="../images/creating-and-combining-views/section1/example.gif" style="width: 300px" />
+<img alt="example" src="../images/creating-and-combining-views/section1/example.gif" style="width: 400px" />
 
 SwiftUI를 사용하는 새 Xcode 프로젝트를 만듭니다. 만든 후 canvas, previews 그리고 SwiftUI의 템플릿 코드를 살펴보세요.
 
@@ -95,3 +95,15 @@ view의 body 속성에서 코드를 변경하면, preview가 당신의 수정사
 ### Section 2
 
 ## Text View 커스텀하기
+
+<img alt="example" src="../images/creating-and-combining-views/section2/example.gif" style="width: 400px" />
+
+당신은 코드를 변경해 view의 display를 변경하거나, inspector를 이용해 사용가능한 항목을 찾음으로서 코드작성에 도움을 받을 수 있습니다.
+
+Landmarks 앱을 만들면서, 당신은 source 편집기, canvas, inspector와 같은 편집기들을 마음대로 조합해 사용할 수 있습니다. 당신이 어떤 도구를 사용하든지에 관계없이 코드는 업데이트된 상태로 유지됩니다.
+
+<br>
+
+### Step 1
+
+<img alt="step1" src="../images/creating-and-combining-views/section2/step1.png" style="width: 300px" />
