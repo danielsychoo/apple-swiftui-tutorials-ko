@@ -19,6 +19,7 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 - [Section 1. 새로운 Project를 만들고 Canvas 살펴보기](#section-1)
 - [Section 2. Text View 커스텀하기](#section-2)
 - [Section 3. stack 사용하여 view들 합치기](#section-3)
+- [Section 4. Custom Image View 만들기](#section-4)
 
 <hr>
 <br>
@@ -288,6 +289,94 @@ location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원�
 <img alt="step9" src="../images/creating-and-combining-views/section3/step9.png" style="width: 700px" />
 
 마지막으로, `padding()` modifier method를 이용해 랜드마크의 이름과 세부사항에 약간의 여백을 줍니다.
+
+<br>
+
+### [⇡목차로 돌아가기](#목차)
+
+<hr>
+<br>
+
+### Section 4
+
+## Custom Image View 만들기
+
+<img alt="example" src="../images/creating-and-combining-views/section4/example.gif" style="width: 400px" />
+
+이름과 위치에 대한 view를 모두 설정했다면, 다음 단계로 랜드마크에 대한 이미지를 추가할 차례이다.
+이때 이 파일의 code를 더 작성하는 것 대신에, 당신은 이미지의 mask, border, drop shadow를 적용한 custom view를 만들 수 있다.
+
+<br>
+
+> 프로젝트의 assets cagalog에 이미지를 추가하는 것이 시작입니다.
+
+<br>
+
+### Step 1
+
+<img alt="step1" src="../images/creating-and-combining-views/section4/step1.png" style="width: 300px" />
+
+프로젝트 파일의 Resources 폴더에서 `turtlerock@2x.jpg` 파일을 찾고; asset catalog 에디터에 드래그 해 넣는다. Xcode는 image를 위한 새로운 image set을 만든다.
+
+<br>
+
+> 다음으로, custom image view를 위한 새로운 SwiftUI view를 만들 것입니다.
+
+<br>
+
+### Step 2
+
+<img alt="step2" src="../images/creating-and-combining-views/section4/step2.png" style="width: 400px" />
+
+다시 File > New > File 을 선택해 template 선택기를 여세요. User Interface 섹션에서, "SwiftUI View"를 선택하고 Next를 클릭하세요. 파일의 이름으로 "CircleImage"를 입력하고 Create를 클릭하세요
+
+<br>
+
+> 이제 원하는 디자인과 일치하도록 이미지를 삽입하고 수정할 준비가 되었습니다.
+
+<br>
+
+### Step 3
+
+<img alt="step3" src="../images/creating-and-combining-views/section4/step3.png" style="width: 700px" />
+
+text view를 `Image(_:)` initializer로 바꾸고, initializer에 출력할 Turtle Rock 이미지의 이름을 전달합니다.
+
+<br>
+
+### Step 4
+
+이미지에 원형 clipping 을 적용하기 위해 `clipShade(Circle())` 을 호출합니다.
+
+<img alt="step4" src="../images/creating-and-combining-views/section4/step4.png" style="width: 700px" />
+
+원형 모양을 사용하려면 mask로 사용하거나, 원에 stroke이나 fill을 주어 view로 사용할 수 있습니다.
+
+<br>
+
+### Step 5
+
+<img alt="step5" src="../images/creating-and-combining-views/section4/step5.png" style="width: 700px" />
+
+회색 stroke를 준 또 다른 원을 만들고, overlay로 더함으로서 image에 border를 줍니다.
+
+<br>
+
+### Step 6
+
+<img alt="step6" src="../images/creating-and-combining-views/section4/step6.png" style="width: 700px" />
+
+다음으로, 7pt의 radius를 준 shadow를 더하세요.
+
+<br>
+
+### Step 7
+
+border color를 white로 변경하세요.
+
+<img alt="step7" src="../images/creating-and-combining-views/section4/step7.png" style="width: 700px" />
+
+이렇게 image view가 완성되었습니다.
 
 <br>
 
