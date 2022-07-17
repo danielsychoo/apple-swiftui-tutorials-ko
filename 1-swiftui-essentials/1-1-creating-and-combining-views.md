@@ -12,6 +12,14 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 | :-----------: | :-------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 |     40분      | [프로젝트 파일](https://docs-assets.developer.apple.com/published/9637262be4dfa3661d596e567d0c793f/CreatingAndCombiningViews.zip) | [13.1 이상의 Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) |
 
+<br>
+
+### 목차
+
+- [Section 1. 새로운 Project를 만들고 Canvas 살펴보기](#새로운-project를-만들고-canvas-살펴보기)
+- [Section 2. Text View 커스텀하기](#text-view-커스텀하기)
+- [Section 3. stack 사용하여 view들 합치기](#stack-사용하여-view들-합치기)
+
 <hr>
 <br>
 
@@ -89,6 +97,10 @@ body 속성에서, "Hello, World!"를 수정해 스스로를 환영해보세요.
 
 view의 body 속성에서 코드를 변경하면, preview가 당신의 수정사항을 반영해서 업데이트합니다.
 
+<br>
+
+### [⇡목차로 돌아가기](#목차)
+
 <hr>
 <br>
 
@@ -165,6 +177,10 @@ code를 직접 수정해서 `padding()` modifier를 `foregroundColor(.green)` mo
 <img alt="step6" src="../images/creating-and-combining-views/section2/step6.png" style="width: 700px" />
 
 `foregroundColor(.green)` modifier가 변경, 삭제 될 때 Xcode에 의해 당신의 code가 자동으로 반영된다는 점을 기억하세요.
+
+<br>
+
+### [⇡목차로 돌아가기](#목차)
 
 <hr>
 <br>
@@ -272,3 +288,10 @@ location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원�
 <img alt="step9" src="../images/creating-and-combining-views/section3/step9.png" style="width: 700px" />
 
 마지막으로, `padding()` modifier method를 이용해 랜드마크의 이름과 세부사항에 약간의 여백을 줍니다.
+
+<br>
+
+### [⇡목차로 돌아가기](#목차)
+
+<hr>
+<br>
