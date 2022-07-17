@@ -16,9 +16,9 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 
 ### 목차
 
-- [Section 1. 새로운 Project를 만들고 Canvas 살펴보기](#새로운-project를-만들고-canvas-살펴보기)
-- [Section 2. Text View 커스텀하기](#text-view-커스텀하기)
-- [Section 3. stack 사용하여 view들 합치기](#stack-사용하여-view들-합치기)
+- [Section 1. 새로운 Project를 만들고 Canvas 살펴보기](#section-1)
+- [Section 2. Text View 커스텀하기](#section-2)
+- [Section 3. stack 사용하여 view들 합치기](#section-3)
 
 <hr>
 <br>
