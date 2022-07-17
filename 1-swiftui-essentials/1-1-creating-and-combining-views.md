@@ -165,3 +165,110 @@ code를 직접 수정해서 `padding()` modifier를 `foregroundColor(.green)` mo
 <img alt="step6" src="../images/creating-and-combining-views/section2/step6.png" style="width: 700px" />
 
 `foregroundColor(.green)` modifier가 변경, 삭제 될 때 Xcode에 의해 당신의 code가 자동으로 반영된다는 점을 기억하세요.
+
+<hr>
+<br>
+
+### Section 3
+
+## stack 사용하여 view들 합치기
+
+<img alt="example" src="../images/creating-and-combining-views/section3/example.png" style="width: 500px" />
+
+당신은 이전 섹션에서 만들었던 title view 외에, 도시와 공원의 이름과 같은 랜드마크에 대한 세부정보를 담을 text view들을 추가할 것입니다.
+
+SwiftUI view를 만들게 될 때, 당신은 해당 view의 content, layout, behavior를 view의 body 속성 내부에 서술할 것입니다; 그러나, body 속성은 오직 하나의 view를 리턴합니다. 당신은 여러 view들을 그룹화하여 수직, 수평으로 배치하거나 앞뒤로 배치하는 stack을 통해 view들을 합치거나, 포함시킬 수 있습니다.
+
+이번 섹션에서, 당신은 공원의 세부사항을 담은 horizontal stack을 구현하고 vertical stack을 이용해 title 아래에 해당 horizontal stack을 배치해볼 것입니다.
+
+<br>
+
+> 당신은 Xcode의 structured editing support를 이용해 container view에 view를 포함시키거나, inspector를 열거나, 다른 유용한 변경사항을 도울 수 있습니다.
+
+<br>
+
+### Step 1
+
+<img alt="step1" src="../images/creating-and-combining-views/section3/step1.png" style="width: 300px" />
+
+`Text` view의 initializer를 `command + 클릭`해 structured editing popover를 보이게 하고, "Embed in VStack" 을 선택하세요.
+
+<br>
+
+> 다음으로, 당신은 library에서 Text view를 드래그해서 stack에 text view를 추가할 것입니다.
+
+<br>
+
+### Step 2
+
+<img alt="step2" src="../images/creating-and-combining-views/section3/step2.png" style="width: 300px" />
+
+Xcode 창의 우상단에 있는 플러스 버튼 (+) 을 클릭해서 library를 열고, "Turtle Rock" text view 바로 아래에 `Text` view를 드래그해서 위치시키세요.
+
+<br>
+
+### Step 3
+
+<img alt="step3" src="../images/creating-and-combining-views/section3/step3.png" style="width: 700px" />
+
+`Text` view의 placeholder를 “Joshua Tree National Park”로 변경하세요.
+
+<br>
+
+> 원하는 레이아웃과 일치하도록 location을 커스텀합니다.
+
+<br>
+
+### Step 4
+
+<img alt="step4" src="../images/creating-and-combining-views/section3/step4.png" style="width: 700px" />
+
+location의 font를 subheadline으로 설정합니다.
+
+<br>
+
+### Step 5
+
+`VStack` initializer edge의 align을 leading에 맞추도록 편집합니다.
+
+<img alt="step5" src="../images/creating-and-combining-views/section3/step5.png" style="width: 700px" />
+
+기본적으로, stack은 content를 중앙에 배치하도록 axis가 맞춰져 있고 상황에 맞춘 spacing을 제공합니다.
+
+<br>
+
+> 다음으로, 공원의 지역을 넣을 text view를 location의 우측에 추가할 것입니다.
+
+<br>
+
+### Step 6
+
+<img alt="step6" src="../images/creating-and-combining-views/section3/step6.png" style="width: 300px" />
+
+canvas에서, "Joshua Tree National Park"을 `command + 클릭`하고, “Embed in HStack”을 선택합니다.
+
+<br>
+
+### Step 7
+
+<img alt="step7" src="../images/creating-and-combining-views/section3/step7.png" style="width: 700px" />
+
+location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원의 지역으로 변경한 뒤, text view의 font를 subheadline으로 설정합니다.
+
+<br>
+
+### Step 8
+
+디바이스의 전체 width를 사용하는 layout을 지시하려면, 두 개의 text view를 가진 horizontal stack에 `Spacer` 를 추가해 공원과 지역을 분리합니다.
+
+<img alt="step8" src="../images/creating-and-combining-views/section3/step8.png" style="width: 700px" />
+
+`Spacer` 는 content에 의해서만 크기가 정의되는 대신에, 포함된 view가 부모 view의 모든 공간을 사용하도록 확장합니다.
+
+<br>
+
+### Step 9
+
+<img alt="step9" src="../images/creating-and-combining-views/section3/step9.png" style="width: 700px" />
+
+마지막으로, `padding()` modifier method를 이용해 랜드마크의 이름과 세부사항에 약간의 여백을 줍니다.
