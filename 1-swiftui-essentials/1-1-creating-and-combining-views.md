@@ -303,8 +303,8 @@ location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원�
 
 <img alt="example" src="../images/creating-and-combining-views/section4/example.gif" style="width: 400px" />
 
-이름과 위치에 대한 view를 모두 설정했다면, 다음 단계로 랜드마크에 대한 이미지를 추가할 차례이다.
-이때 이 파일의 code를 더 작성하는 것 대신에, 당신은 이미지의 mask, border, drop shadow를 적용한 custom view를 만들 수 있다.
+이름과 위치에 대한 view를 모두 설정했다면, 다음 단계로 랜드마크에 대한 이미지를 추가할 차례입니다.
+이때 이 파일의 code를 더 작성하는 것 대신에, 당신은 이미지의 mask, border, drop shadow를 적용한 custom view를 만들 수 있습니다.
 
 <br>
 
@@ -316,7 +316,7 @@ location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원�
 
 <img alt="step1" src="../images/creating-and-combining-views/section4/step1.png" style="width: 300px" />
 
-프로젝트 파일의 Resources 폴더에서 `turtlerock@2x.jpg` 파일을 찾고; asset catalog 에디터에 드래그 해 넣는다. Xcode는 image를 위한 새로운 image set을 만든다.
+프로젝트 파일의 Resources 폴더에서 `turtlerock@2x.jpg` 파일을 찾고; asset catalog 에디터에 드래그 해 넣습니다. Xcode는 image를 위한 새로운 image set을 만듭니다.
 
 <br>
 
