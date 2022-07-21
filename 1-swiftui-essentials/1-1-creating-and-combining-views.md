@@ -20,6 +20,7 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 - [Section 2. Text View 커스텀하기](#section-2)
 - [Section 3. stack 사용하여 view들 합치기](#section-3)
 - [Section 4. Custom Image View 만들기](#section-4)
+- [Section 5. 다른 Framework에서 SwiftUI 사용하기](#section-5)
 
 <hr>
 <br>
@@ -303,8 +304,8 @@ location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원�
 
 <img alt="example" src="../images/creating-and-combining-views/section4/example.gif" style="width: 400px" />
 
-이름과 위치에 대한 view를 모두 설정했다면, 다음 단계로 랜드마크에 대한 이미지를 추가할 차례이다.
-이때 이 파일의 code를 더 작성하는 것 대신에, 당신은 이미지의 mask, border, drop shadow를 적용한 custom view를 만들 수 있다.
+이름과 위치에 대한 view를 모두 설정했다면, 다음 단계로 랜드마크에 대한 이미지를 추가할 차례입니다.
+이때 이 파일의 code를 더 작성하는 것 대신에, 당신은 이미지의 mask, border, drop shadow를 적용한 custom view를 만들 수 있습니다.
 
 <br>
 
@@ -316,7 +317,7 @@ location 다음에 새로운 `Text` view를 추가하고, placeholder를 공원�
 
 <img alt="step1" src="../images/creating-and-combining-views/section4/step1.png" style="width: 300px" />
 
-프로젝트 파일의 Resources 폴더에서 `turtlerock@2x.jpg` 파일을 찾고; asset catalog 에디터에 드래그 해 넣는다. Xcode는 image를 위한 새로운 image set을 만든다.
+프로젝트 파일의 Resources 폴더에서 `turtlerock@2x.jpg` 파일을 찾고; asset catalog 에디터에 드래그 해 넣습니다. Xcode는 image를 위한 새로운 image set을 만듭니다.
 
 <br>
 
@@ -379,6 +380,75 @@ border color를 white로 변경하세요.
 이렇게 image view가 완성되었습니다.
 
 <br>
+
+### [⇡목차로 돌아가기](#목차)
+
+<hr>
+<br>
+
+### Section 5
+
+## 다른 Framework에서 SwiftUI 사용하기
+
+<img alt="example" src="../images/creating-and-combining-views/section5/example.png" style="width: 400px" />
+
+다음으로 주어진 좌표를 중앙으로 하는 지도를 생성할 것입니다. 당신은 지도를 렌더하기위해 MapKit을 이용한 Map view를 이용할 수 있습니다.
+
+<br>
+
+> 시작을 위해, 지도를 관리할 새로운 custom view를 생성할 것입니다.
+
+<br>
+
+### Step 1
+
+<img alt="step1" src="../images/creating-and-combining-views/section5/step1.png" style="width: 300px" />
+
+File > New > File을 고르고, platform으로 iOS를, template으로 "SwiftUI View"를 선택한 뒤, Next를 클릭하세요. 새로운 file의 이름을 MapView.swift로 작성하고 Create를 클릭하세요.
+
+<br>
+
+### Step 2
+
+MapKit에 대한 import문을 추가합니다.
+
+<img alt="step2" src="../images/creating-and-combining-views/section5/step2.png" style="width: 700px" />
+
+당신이 같은 file에서 SwiftUI와 함께 다른 특정 framework를 import하면, 해당 framework에서 제공하는 SwiftUI-관련 기능에 access할 수 있습니다.
+
+<br>
+
+### Step 3
+
+지도를 위한 지역 정보를 가지고 있는 private state 변수를 생성합니다.
+
+<img alt="step3" src="../images/creating-and-combining-views/section5/step3.png" style="width: 700px" />
+
+`@State` 속성을 이용해 하나 이상의 view에서 수정할 수 있는 app의 data source를 만듭니다. SwiftUI는 기본 저장소를 관리하고 value에 의존된 view를 자동으로 update합니다.
+
+<br>
+
+### Step 4
+
+기본 Text view를 region을 binding한 Map view로 변경하세요.
+
+<img alt="step4" src="../images/creating-and-combining-views/section5/step4.png" style="width: 700px" />
+
+state 변수의 접두사로 $를 붙이면, 기본 값을 참조하는 것처럼 binding할 수 있습니다. 사용자가 지도와 상호작용할 때, 지도는 user interface에 현재 보이는 부분과 지역정보의 값이 매칭되도록 값을 업데이트합니다.
+
+<br>
+
+> preview가 static mode인 경우, native SwiftUI view만 완전히 렌더링됩니다. Map view에서는, 렌더링을 보기 위해 live preview로 전환해야 합니다.
+
+<br>
+
+### Step 5
+
+preview를 live mode로 변경하기 위해 Live Preview를 클릭하세요. 그리고 preview 상단의 Try Again이나 Resume를 클릭해야 할 것입니다.
+
+<img alt="step5" src="../images/creating-and-combining-views/section5/step5.png" style="width: 400px" />
+
+이 시점에서, Turtle Rock이 map의 중앙에 위치한 것을 볼 수 있습니다. 당신은 live preview에서 map을 조작해 약간 축소하고 주변 지역을 볼 수도 있습니다.
 
 ### [⇡목차로 돌아가기](#목차)
 
