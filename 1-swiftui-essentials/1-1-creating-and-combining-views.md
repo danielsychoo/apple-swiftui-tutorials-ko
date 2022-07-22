@@ -21,6 +21,7 @@ view를 배치하기 위해, Landmarks앱은 stack을 사용하여 image와 text
 - [Section 3. stack 사용하여 view들 합치기](#section-3)
 - [Section 4. Custom Image View 만들기](#section-4)
 - [Section 5. 다른 Framework에서 SwiftUI 사용하기](#section-5)
+- [Section 6. Detail View 작성하기](#section-6)
 
 <hr>
 <br>
@@ -449,6 +450,111 @@ preview를 live mode로 변경하기 위해 Live Preview를 클릭하세요. 그
 <img alt="step5" src="../images/creating-and-combining-views/section5/step5.png" style="width: 400px" />
 
 이 시점에서, Turtle Rock이 map의 중앙에 위치한 것을 볼 수 있습니다. 당신은 live preview에서 map을 조작해 약간 축소하고 주변 지역을 볼 수도 있습니다.
+
+### [⇡목차로 돌아가기](#목차)
+
+<hr>
+<br>
+
+### Section 6
+
+## Detail View 작성하기
+
+<img alt="example" src="../images/creating-and-combining-views/section6/example.png" style="width: 400px" />
+
+이제 당신은 필요한 모든 component들을 가지고 있습니다 - 지역의 이름, 원형 이미지, 위치를 위한 지도.
+
+지금까지 사용했던 도구들을 가지고, custom view를 결합해서 landmark detail view의 최종 디자인을 만듭니다.
+
+<br>
+
+### Step 1
+
+<img alt="step1" src="../images/creating-and-combining-views/section6/step1.png" style="width: 700px" />
+
+Project nacigator에서, ContentView.swift 파일을 고르세요.
+
+<br>
+
+### Step 2
+
+<img alt="step2" src="../images/creating-and-combining-views/section6/step2.png" style="width: 700px" />
+
+세 개의 text view를 가지고 있는 VStack을 다른 VStack에 포함시킵니다.
+
+<br>
+
+### Step 3
+
+<img alt="step3" src="../images/creating-and-combining-views/section6/step3.png" style="width: 700px" />
+
+stack의 가장 위에 당신이 만든 custom MapView를 추가합니다. `frame(width:height:)`을 통해 MapView의 size를 설정합니다.
+
+당신이 height 매개변수만 특정한다면, view의 size는 content의 width에 맞게 자동으로 조정됩니다. 이 경우에, MapView는 사용 가능한 모든 공간을 채우기 위해 확장됩니다.
+
+<br>
+
+### Step 4
+
+합쳐진 view에서 렌더링 된 map을 보기 위해 Live Preview를 클릭하세요.
+
+<img alt="step4" src="../images/creating-and-combining-views/section6/step4.png" style="width: 700px" />
+
+Live Preview를 보는 동안에도 계속 수정을 이어나갈 수 있습니다.
+
+<br>
+
+### Step 5
+
+<img alt="step5" src="../images/creating-and-combining-views/section6/step5.png" style="width: 700px" />
+
+stack에 `CircleImage` view를 추가하세요.
+
+<br>
+
+### Step 6
+
+map view위에 image view를 계층으로 쌓으려면, image에 vertical로 offset -130 포인트를 주고, view의 bottom에 -130 포인트의 padding을 줍니다.
+
+<img alt="step6" src="../images/creating-and-combining-views/section6/step6.png" style="width: 700px" />
+
+이 조정들은 image를 위쪽으로 이동시키고 text를 위한 공간을 만듭니다.
+
+<br>
+
+### Step 7
+
+<img alt="step7" src="../images/creating-and-combining-views/section6/step7.png" style="width: 700px" />
+
+바깥쪽 VStack의 하단에 `spacer`를 추가해 content를 screen의 상단으로 위치시킵니다.
+
+<br>
+
+### Step 8
+
+<img alt="step8" src="../images/creating-and-combining-views/section6/step8.png" style="width: 700px" />
+
+map content가 screen의 상단 가장자리까지 확장될 수 있도록 허용하기위해, map view에 `ignoresSafeArea(edges: .top)` modifier를 추가합니다.
+
+<br>
+
+### Step 9
+
+<img alt="step9" src="../images/creating-and-combining-views/section6/step9.png" style="width: 700px" />
+
+`divider` 와 landmark에 대한 몇몇 부가적인 설명들을 추가합니다.
+
+<br>
+
+### Step 10
+
+마지막으로, 각각의 `Text` view에 subheadline을 적용시켰던 font modifier를 두 `Text`를 가지고 있는 `HStack` 으로 옮겨주고, subheadline text에 secondary color를 적용해줍니다.
+
+<img alt="step10" src="../images/creating-and-combining-views/section6/step10.png" style="width: 700px" />
+
+stack과 같은 layout view에 modifier를 적용하면, SwiftUI는 해당 그룹에 포함된 모든 element들에 modifier를 적용합니다.
+
+<br>
 
 ### [⇡목차로 돌아가기](#목차)
 
