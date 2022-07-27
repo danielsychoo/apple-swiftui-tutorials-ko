@@ -48,7 +48,7 @@ SwiftUI를 이용해 Xcode의 미리보기를 보면서 간단한 하나의 view
 
 ### - [view 만들고 합치기](/1-swiftui-essentials/1-1-creating-and-combining-views.md) <img alt="time" src="images/landing/time.svg" width="16" height="16" />40분
 
-### - [list와 navigation 구축하기]() <img alt="time" src="images/landing/time.svg" width="16" height="16" />35분
+### - [list와 navigation 구축하기](/1-swiftui-essentials/1-2-building-lists-and-navigation.md) <img alt="time" src="images/landing/time.svg" width="16" height="16" />35분
 
 ### - [user input 핸들링하기]() <img alt="time" src="images/landing/time.svg" width="16" height="16" />20분
 
