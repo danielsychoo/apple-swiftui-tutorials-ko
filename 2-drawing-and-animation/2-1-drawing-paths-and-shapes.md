@@ -355,6 +355,7 @@ BadgeBackground.swift에서, badge에 Path shape를 추가하고 fill() modifier
 <td valign="top"> 
 
 > `BadgeBackground.swift`
+> 
 > ```swift
 >   import SwiftUI
 >   
