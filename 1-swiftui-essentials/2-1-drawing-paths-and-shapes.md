@@ -1,6 +1,3 @@
-<table style="background-image: url(../images/chapter2/1-drawing-paths-and-shapes/040H00@2x.png); background-size: cover; background-position: top;">
-<td width="60%">
-
 ### Drawing과 Animation
 
 # Path와 Shape 그리기
@@ -17,11 +14,6 @@
 
 [프로젝트 파일]: https://docs-assets.developer.apple.com/published/e08d353171a36c3834ffec37760ab0cb/DrawingPathsAndShapes.zip
 [실습 환경]: https://itunes.apple.com/us/app/xcode/id497799835?mt=12
-
-</td>
-<td>
-</td>
-</table>
 
 <br>
 
